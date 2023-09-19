@@ -14,6 +14,10 @@ namespace BinTallLibrary
 
         public BinTall(string binaryString)
         {
+            if (!IsBinary(binaryString))
+            {
+                throw new ArgumentException("Not a binary number");
+            }
             this.binaryString = binaryString;
             this.decimalNum = Convert.ToInt32(binaryString);
         }
