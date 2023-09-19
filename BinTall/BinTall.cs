@@ -52,6 +52,18 @@ namespace BinTallLibrary
             return new BinTall(sum);
         }
 
+        public static BinTall operator +(BinTall num1, int num2)
+        {
+            int sum = num1.GetInt() + num2;
+            return new BinTall(sum);
+        }
+
+        public static BinTall operator +(int num1, BinTall num2)
+        {
+            int sum = num1 + num2.GetInt();
+            return new BinTall(sum);
+        }
+
 
         public static BinTall operator -(BinTall num1, BinTall num2)
         {
@@ -60,6 +72,18 @@ namespace BinTallLibrary
         }
 
 
+        public static BinTall operator -(BinTall num1, int num2)
+        {
+            int sum = num1.GetInt() - num2;
+            return new BinTall(sum);
+        }
+
+        public static BinTall operator -(int num1, BinTall num2)
+        {
+            int sum = num1 - num2.GetInt();
+            return new BinTall(sum);
+        }
+
 
         public static BinTall operator *(BinTall num1, BinTall num2)
         {
@@ -67,7 +91,17 @@ namespace BinTallLibrary
             return new BinTall(sum);
         }
 
+        public static BinTall operator *(BinTall num1, int num2)
+        {
+            int sum = num1.GetInt() * num2;
+            return new BinTall(sum);
+        }
 
+        public static BinTall operator *(int num1, BinTall num2)
+        {
+            int sum = num1 * num2.GetInt();
+            return new BinTall(sum);
+        }
 
         public override string ToString()
         {
