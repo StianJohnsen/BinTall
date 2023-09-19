@@ -3,6 +3,8 @@ using BinTallLibrary;
 
 BinTall numb1 = new BinTall(15);
 BinTall numb2 = new BinTall("dwadwa");
+//BinTall numb2 = new BinTall("11111111");
+
 
 BinTall numb3 = numb1 + numb2;
 BinTall numb4 = numb1 + 2;
